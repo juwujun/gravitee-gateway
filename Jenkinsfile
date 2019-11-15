@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh 'sh ./deliver.sh'
+                sh 'java -Pdev -pl gravitee-gateway-standalone/gravitee-gateway-standalone-container'
             }
         }
     }
